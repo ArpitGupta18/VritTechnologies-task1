@@ -9,13 +9,13 @@ const Sticker = ({ src, alt, animation = {}, animateIn }) => {
 			initial={animation.initial}
 			animate={animateIn ? animation.animate : {}}
 			transition={animation.transition}
-			className="absolute w-[97px] h-[97px] rounded-4xl"
+			className="absolute w-[97px] h-[97px] rounded-4xl z-[-1]"
 		>
 			<img
 				src={src}
 				alt={alt}
-				className="w-full h-full rounded-4xl object-contain "
-				style={{ backgroundColor: "transparent" }}
+				className="w-full h-full rounded-4xl object-contain"
+				// style={{ backgroundColor: "red" }}
 			/>
 		</motion.div>
 	);

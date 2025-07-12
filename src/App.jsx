@@ -10,9 +10,9 @@ const App = () => {
 	const [isFrozen, setIsFrozen] = useState(false);
 
 	return (
-		<div className="bg-dual-glow flex justify-center items-center font-">
+		<div className="bg-dual-glow flex justify-center items-center">
 			<div
-				className="relative w-300 h-150 z-10"
+				className="relative w-300 h-150 z-2"
 				onMouseEnter={() => setIsHovered(true)}
 				onMouseLeave={() => {
 					setIsHovered(false);
@@ -30,6 +30,8 @@ const App = () => {
 						animateIn={isHovered}
 						isFrozen={isFrozen}
 						frozenState={avatar.frozenState}
+						showPopup={avatar.showPopup}
+						popupText={avatar.popupText}
 					/>
 				))}
 
@@ -43,7 +45,7 @@ const App = () => {
 					/>
 				))}
 
-				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-3">
+				<div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 flex flex-col items-center gap-3 z-[-1]">
 					<div className="capitalize text-[1.3rem] -mb-1 text-gray-700 tracking-wide">
 						Hear how they level up their game!
 					</div>

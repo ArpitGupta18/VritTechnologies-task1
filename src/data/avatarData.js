@@ -1,9 +1,10 @@
-// Define a frozenState property for each object as well
 export const avatarData = [
 	{
 		src: "/assets/avatars/image1.png",
 		alt: "User 1",
 		hover: true,
+		showPopup: true,
+		popupText: "Amazing ⭐️⭐️⭐️⭐️⭐️",
 		animation: {
 			initial: { opacity: 1, x: 372, y: 128 },
 			animate: { opacity: 1, x: 232, y: 18 },
@@ -83,6 +84,8 @@ export const avatarData = [
 		src: "/assets/avatars/image6.png",
 		alt: "User 6",
 		hover: true,
+		showPopup: true,
+		popupText: "⭐️⭐️⭐️⭐️⭐️",
 		animation: {
 			initial: { opacity: 1, x: 630, y: 352 },
 			animate: { opacity: 1, x: 720, y: 445 },
